@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FirstPage.css">
+    <script src="FirstPage.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a7affe22b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- for tagline font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Luckiest+Guy&family=Merriweather:ital@1&family=Oswald:wght@700&family=Piedra&family=Rubik+Microbe&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Luckiest+Guy&family=Oswald:wght@700&family=Piedra&family=Rubik+Microbe&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Swaddy</title>
+ </head>
+ <body>
+    <!-- header -->
+    <div class="header">
+        <h1>Swaddy's Trailblazing</h1>
+      </div>
+      <!-- Tagline -->
+    <div class="tagline">Delve</div> 
+    <div class="tagline"> 
+      <span>into my Odyssey</span>
+    </div>
+     <!-- Navbar -->
+     <nav>
+        <label class="SelfBrand">
+            <a href="FirstPage.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>            
+        </label>        
+        <!-- ul means making the label and li's separate in appearance -->
+        <ul id="myDIV"> 
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                suad.sharief@g.msuiit.edu.ph</a>
+              </li>
+          <li>
+            <a href="SecondPage.html">
+            <i class="fa-solid fa-address-card"></i>
+            Testimonials</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="toggleNav()">
+                <i class="fa-solid fa-address-book"></i>
+                Contact
+            </a>
+        </li>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="https://www.linkedin.com/in/mssuadsharief/">Linkedin</a>
+                <a href="https://github.com/Shiennes ">Github</a>
+                <a href="https://www.facebook.com/suad.sharief.14/">Facebook</a>
+            </div>
+        </div>
+          <li>
+            <a href="ThirdPage.html">
+            <i class="fa-solid fa-child-dress"></i>
+            Experience</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- for slideshow of image -->
+    <div class="slideshow-container">
+        <div class="slideshow-slide fade">
+            <img src="img/1.jpg" alt="Image 1">
+            <div class="caption">Game-Changer</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/2.jpg" alt="Image 2">
+            <div class="caption">Flexible</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/3.jpg" alt="Image 3">
+            <div class="caption">Resilient</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/4.jpg" alt="Image 4">
+            <div class="caption">Committed to thoroughness </div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/5.png" alt="Image 5">
+            <div class="caption">Always ready to Enact a Transformation </div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/6.jpg" alt="Image 6">
+            <div class="caption">Collaborative team player</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/7.jpg" alt="Image 7">
+            <div class="caption">results-driven individual</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/8.png" alt="Image 8">
+            <div class="caption">strong sense of purpose and perseverance</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/9.jpg" alt="Image 9">
+            <div class="caption">resourceful</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/10.jpg" alt="Image 10">
+            <div class="caption">ambitious</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/11.jpg" alt="Image 11">
+            <div class="caption">detail-oriented</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/12.jpg" alt="Image 12">
+            <div class="caption">Aspiring Data Analyst</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/13.png" alt="Image 13">
+            <div class="caption">Aspiring Front-End Developer</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/14.png" alt="Image 14">
+            <div class="caption">Aspiring Food Researcher</div>
+        </div>
+        <div class="slideshow-slide fade">
+            <img src="img/15.png" alt="Image 15">
+            <div class="caption">Commitment to self-discovery and adventure</div>
+        </div>
+        <!-- Add more slides as needed -->
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+ </body>
+ </html>

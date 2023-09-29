@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@0,400;1,800&family=Luckiest+Guy&family=Merriweather:ital@1&family=Oswald:wght@700&family=Piedra&family=Rubik+Microbe&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a7affe22b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- for tagline font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Luckiest+Guy&family=Merriweather:ital@1&family=Oswald:wght@700&family=Piedra&family=Rubik+Microbe&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Luckiest+Guy&family=Oswald:wght@700&family=Piedra&family=Rubik+Microbe&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>My Experience Roadmap</title>
+    <link rel="stylesheet" href="ThirdPage.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <label class="SelfBrand">
+            <a href="FirstPage.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>            
+        </label>        
+        <!-- ul means making the label and li's separate in appearance -->
+        <ul id="myDIV"> 
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                suad.sharief@g.msuiit.edu.ph</a>
+              </li>
+          <li>
+            <a href="SecondPage.html">
+            <i class="fa-solid fa-address-card"></i>
+            Testimonials</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="toggleNav()">
+                <i class="fa-solid fa-address-book"></i>
+                Contact
+            </a>
+        </li>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="https://www.linkedin.com/in/mssuadsharief/">Linkedin</a>
+                <a href="https://github.com/Shiennes ">Github</a>
+                <a href="https://www.facebook.com/suad.sharief.14/">Facebook</a>
+            </div>
+        </div>
+          <li>
+            <a href="ThirdPage.html">
+            <i class="fa-solid fa-child-dress"></i>
+            Experience</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="roadmap">
+        <div class="station" id="station1">
+            <h2>December 2022</h2>
+            <p>IT Infrastructure Consultant for Mindanao Business IT Solutions (MinBITS) Corporation  </p>
+        </div>
+        <div class="station" id="station2">
+            <h2>October 2022- December 2022</h2>
+            <p>Systems Architect and Prototype Designer for the Ahm’s Chicken Haus’ Order Management System</p>
+        </div>
+        <div class="station" id="station3">
+            <h2>February 2023-June 25, 2023</h2>
+            <p>Associate Project Manager</p>
+        </div>
+        <div class="station" id="station4">
+            <h2>March 2023-June 20, 2023</h2>
+            <p>Business Process Analyst at Ivory Printing and Publishing House</p>
+        </div>
+        <div class="station" id="station5">
+            <h2>May 2023-June 20, 2023</h2>
+            <p>Web-based System Full-Stack Developer of a Recommendation-Catalogue System for Botica Ycsobel</p>
+        </div>
+    </div>
+
+    <div class="experience-details" id="experience-details">
+        <!-- Experience details will be displayed here when a station is clicked -->
+    </div>
+    <div class="gif-container">
+        <p>Click to see it</p>
+    </div>
+
+    <script src=ThirdPage.js></script>
+     
+
+</body>
+</html>

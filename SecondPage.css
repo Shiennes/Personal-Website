@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Navigation bar */
+nav {
+    background: #f3cfa4;
+    height: 50px;
+    width: 98%;
+    box-shadow: 0 10px 15px #b97f5f;
+    position: absolute;
+    border-radius: 40px;
+    top: 35px; /* Adjust the top value to position the nav bar below the .tagline */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Merriweather', serif;
+  }
+  .SelfBrand img{
+    width: 100px; /* Set the width to the desired size */
+    height: 45px;; /* Maintain the aspect ratio */
+    margin-left: 25px; /* Move the image 20px to the right */
+    margin-top: 2px; /* Move the image 10px down */
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  /* for the three terms to the right */
+  nav li {
+    display: inline-block;
+    line-height: 55px;
+    margin: 0 8px;
+    font-family: Montserrat;
+  }
+  
+  nav a {
+    color: #309f9b;
+    font-size: 18px;
+    border: 10px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  nav ul li a.fa-envelope{
+    position: absolute;
+    top: 31px;
+    right: 691px;
+    color: #80b8a2;
+    font-size: 0.55rem;
+  }
+  nav ul li a.fa-address-card {
+    position: absolute;
+    top: 31px;
+    right: 691px;
+    color: #80b8a2;
+    font-size: 0.55rem;
+  }
+  
+  nav ul li a.fa-address-book {
+    position: absolute;
+    top: 31px;
+    right: 502px;
+    color: #80b8a2;
+    font-size: 0.55rem;
+  }
+  
+  nav ul li a.fa-child-dress {
+    position: absolute;
+    top: 31px;
+    right: 361px;
+    color: #80b8a2;
+    font-size: 0.55rem;
+  }
+  /* Contact NavBar */
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* Background image with opacity */
+    background-image: url('img/waves.jpg'); /* Replace 'waves.jpg' with your image file */
+    background-size: 200px 350px; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    /* Background color with opacity */
+    background-color: rgba(128,184,162, 0.5); /* Black background with 0.9 opacity */
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 70px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color:#106c72;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-weight:medium;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color:#f3cfa4;
+    font-weight:bold;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  .testi-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#f6f0fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial {
+    width: 90%;
+    max-width: 1900px;
+    margin: auto;
+    margin-bottom: 2px;
+  }
+  .testimonial-text {
+    background-color: #268f8e;
+    color: #fff;
+    width: 100%;
+    height: 380px;
+    border-radius: 5px 50px;
+    position: relative;
+    font-family: 'EB Garamond', serif;
+    box-shadow: 0 15px 20px #94a7a8;
+  }
+  .user-text {
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .user-text .fas {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .user-text span {
+    display: block;
+    font-size: 13px;
+    margin-top: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .testimonial-pic {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-pic {
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .user-text.active-text {
+    display: block;
+    animation: moveup 0.9s linear forwards;
+  }
+  .user-pic.active-pic {
+    width: 100px;
+    border: 3px solid #268f8e;
+  }
+  
+  @keyframes moveup {
+    0%{
+      margin-top: 25px;
+    }
+    100%{
+      margin-top: 0px;
+    }
+  }
