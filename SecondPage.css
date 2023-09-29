@@ -145,7 +145,7 @@ nav {
     width: 90%;
     max-width: 1900px;
     margin: auto;
-    margin-bottom: 2px;
+    margin-bottom: -10px;
   }
   .testimonial-text {
     background-color: #268f8e;
